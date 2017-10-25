@@ -1,0 +1,97 @@
+Shortcode Options
+
+
+Examples 
+[calendar categories="1,2,3" filter=2 month=8 views=false scroll=true] 
+[eventlist categories="1,2,3" excluded=true start="2011-09-01" end="+3 Weeks" limit=5 noresults="No Events Available"]
+
+[calendar] and [eventlist] optional parameters
+
+categories = "1,2,3" [one or more comma separated category ids] 
+defaults to all categories when unassigned
+
+Display events from the specified category id(s)
+
+excluded = true [true] 
+defaults to false when unassigned
+
+Exclude categories listed in the categories parameter from being displayed
+
+
+
+
+[calendar] only optional parameters
+
+filter = 3 [integer | false] 
+defaults to all when unassigned
+
+Highlight the specified category id in the filter, and display only those events in the calendar - input false to hide the filter
+
+view = "basicDay" [basicDay | agendaDay | basicWeek | agendaWeek | month] 
+defaults to month when unassigned
+
+Display the specified calendar view
+
+views = "agendaDay, basicWeek" [one or more comma separated view labels | false ] 
+defaults to "month,agendaWeek" when unassigned
+
+Display the specified view options in the calendar header - input false to hide the default view options
+
+month = 10 [integer] 
+defaults to current month when unassigned
+
+Display the specified calendar month on load
+
+year = 2001 [four digit integer] 
+defaults to current year when unassigned
+
+Display the specified calendar year on load
+
+nav = false [false] 
+defaults to true when unassigned
+
+Display calendar navigation buttons
+
+scroll = true [false] 
+defaults to false when unassigned
+
+Activate calendar mousewheel navigation
+
+height = 200 [integer] 
+defaults to automatic when unassigned
+
+Assign a minimum pixel height to the calendar
+
+mini = true [false] 
+defaults to false when unassigned
+
+Display the calendar as a minicalendar, displays nicely when applied within a sidebar or footer text widget
+
+
+
+[eventlist] only optional parameters
+
+start = "2011-07-10" [date] 
+defaults to today when unassigned
+
+Display events starting on or after the specified date (yyyy-mm-dd date format required)
+
+end = "+2 Weeks" [date | [Day | Week | Month | Year] intervals] 
+defaults to "+1 Year" when unassigned
+
+Display events ending on or before the specified date or date interval (yyyy-mm-dd date format required)
+
+limit = 15 [integer] 
+defaults to 4 when unassigned
+
+Limit events displayed to the specified quantity
+
+whitelabel = true [true] 
+defaults to false when unassigned
+
+Render events without category colors
+
+noresults = "No Results" [text] 
+defaults to "No Upcoming Events" when unassigned
+
+Display this message when no events are returned
